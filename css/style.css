@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.fullcontainer {
+  position: relative;
+  /* posição relativa a algo  */
+
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  /* ocultar o esquea do scroll no canto direito 
+   */
+}
+
+.bgfundo {
+  background: url(https://placehold.co/1920x1080) no-repeat center/cover;
+  /* 
+    background-color: blue;
+    background-image: url(https://placehold.co/1920x1080);
+    background-repeat: no-repeat;
+    background-position: conter conter;
+    background-size: cover; 
+    */
+  width: 100%;
+  height: 700px;
+}
+
+header {
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  /* meche n eixo z ou seja camadas do site podendo deixar tags atras ou na frente das outras  */
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.8) 0%,
+    rgba(0, 0, 0, 0.8) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  padding: 24px 0px;
+}
+
+.container {
+  max-width: 1073px;
+  margin: 0 auto;
+}
+.main-navigation {
+  display: flex;
+  /* deixar flexivel tudo que é visivel no site, tendo seu tamanho alterado  */
+  align-items: center;
+}
+
+.main-navigation ul {
+  list-style: none;
+  display: flex;
+  /* cada um na sua coluna usando todo o espaço  */
+  gap: 28px;
+  /* espaçamento lateral entre as tags ou divs  */
+  align-items: center;
+  margin: 0;
+}
+
+.main-navigation a {
+  color: #fff;
+  display: flex;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 700;
+  line-height: 1.3125;
+  outline-offset: -1px;
+  padding: 6px 12px;
+  margin-bottom: 3px;
+  border-bottom: solid 3px transparent;
+}
+.main-navigation a:hover,
+.main-navigation a:focus {
+  border-color: #e7a200;
+}
+
+.sec-menu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.sec-menu ion-icon{
+    font-size: 25px;
+}
+
+.site-header-main {
+  display: flex;
+  justify-content: space-around;
+  height: 125px;
+}
+
+#btnZap{
+    background: #e7a200;
+    border-radius: 65px;
+    padding: 3px 15px 0 15px;
+    font-size: 20px;
+    font-weight: bolder;
+    height: 40px;
+
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
